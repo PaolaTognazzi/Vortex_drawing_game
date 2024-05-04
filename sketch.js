@@ -19,7 +19,7 @@ let rotazione;
 let rotazioneSingola = true;
 
 function setup() {
-  createCanvas(800, 600);
+   createCanvas(displayWidth,displayHeight);
   smooth();
   background(255);
   velocita = 1000;
