@@ -19,7 +19,8 @@ let rotazione;
 let rotazioneSingola = true;
 
 function setup() {
-   createCanvas(displayWidth,displayHeight);
+  // createCanvas(displayWidth,displayHeight);
+     createCanvas(windowWidth, windowHeight);
   smooth();
   background(255);
   velocita = 1000;
@@ -27,6 +28,11 @@ function setup() {
   iniziaPartenza();
   inizioVortice();
   
+}
+
+function windowResized() {
+  // Resize the canvas when the window is resized
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function iniziaPartenza() {
